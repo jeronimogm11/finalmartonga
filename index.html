@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final</title>
+	<style>
+		.a{
+			width: 8%;
+			height: 15%;
+			position: absolute;
+			left: 5%;
+			top: 10%;
+			background-color: yellow;
+			font-size: 50px;
+		}
+		.b{
+			width: 8%;
+			height: 15%;
+			position: absolute;
+			left: 5%;
+			top: 40%;
+			background-color: yellow;
+			font-size: 50px;
+		}
+		.c{
+			width: 25%;
+			height: 15%;
+			position: absolute;
+			left: 5%;
+			top: 70%;
+			background-color: yellow;
+			font-size: 50px;
+		}
+		.d{
+			width: 55%;
+			height: 75%;
+			position: absolute;
+			left: 40%;
+			top: 10%;
+			background-color: yellow;
+			font-size: 50px;
+		}
+		.op{
+			width: 15%;
+			height: 20%;
+			position: absolute;
+			left: 5%;
+			top: 7%;
+			background-color: orange;
+			font-size: 50px;
+			transition: 1s;
+		}
+		.cierra1{
+		    width: 5%;
+			height: 5%;
+			position: absolute;
+			left: 23%;
+			top: 20%;
+			background-color: green;
+			font-size: 50px;
+			transition: 1s;	
+		}
+		.suma{
+			 width: 7%;
+			height: 7%;
+			position: absolute;
+			left: 9%;
+			top: 10%;
+			background-color: blue;
+			font-size: 50px;
+			transition: 1s;	
+		}
+		.uno{
+			left:5%;
+			top: 7%;
+			position: absolute;
+			width: 12%;
+			height: 10%;
+			font-size: 50px;
+			background-color:;
+		}
+		.resta{
+			width: 7%;
+			height: 7%;
+			position: absolute;
+			left: 19%;
+			top: 10%;
+			background-color: blue;
+			font-size: 50px;
+			transition: 1s;	
+		}
+		#op1{
+			width: 0px;
+		}
+		#cie1{
+			width: 0px;
+		}
+		#sum{
+			width: 0px;
+		}
+		#res{
+			width: 0px;
+		}
+		#d1{
+			width: 0px;
+			background-color: red,
+		}
+	</style>
+</head>
+<body>
+<div class="a" onclick="most1()"><center>SR</center></div>
+<div class="b"><center>MD</center></div>
+<div class="c"><center>TEORIA</center></div>
+<div class="d"><center>Interactua con los botones de la izquierda, recuerda cerrarlos con los botones verdes.</center></div>
+<div class="d" id="d1"></div>
+ <div class="op" id="op1"></div>
+ <div class="cierra1" id="cie1" onclick="cierra()"></div>
+ <div class="suma" id="sum" onclick="suma()"></div>
+ <div class="resta" id="res" onclick="resta()"></div>
+ <form>
+  
+    </form>
+ <script>
+ 	function most1()
+    {
+op1.style.width=25+"%";
+cie1.style.width=5+"%";
+sum.style.width=7+"%";
+res.style.width=7+"%";
+sum.innerHTML="+";
+res.innerHTML="-";
+    }
+    function cierra()
+    {
+op1.style.width=0+"%";
+cie1.style.width=0+"%";
+sum.style.width=0+"%";
+res.style.width=0+"%";
+sum.innerHTML="";
+res.innerHTML="";
+    }
+     function suma()
+    {
+    	d1.style.width=55+"%";
+    }
+
+ </script>
+</body>
+</html>
